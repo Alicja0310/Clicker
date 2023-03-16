@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Clicker Programisty</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgba(183, 0, 255, 0.561);
+        }
+        button{
+            margin-top: 50%;
+            padding: 10px;
+            color: white;
+            background-color: rgba(135, 135, 135, 0.28);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+
+            color: rgba(172, 18, 255, 0.623);
+            background-color: rgba(132, 132, 132, 0.457);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="mydiv"></div>
+
+
+    <script >
+
+        function Clicker(){
+
+            return(
+                <>
+                <button onClick="{click}"> click </button>
+                </>
+            )
+        }
+        ReactDOM.render(<Clicker />, document.getElementById('mydiv'));
+
+    </script>
+</body>
+</html>
